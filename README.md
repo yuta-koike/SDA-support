@@ -21,7 +21,7 @@
 ## 💾 サンプルコード
 本書で使用したサンプルコード（Rスクリプト）は以下からダウンロードできます。
 
-- [サンプルコード](code/)
+- [サンプルコード](https://github.com/yuta-koike/SDA-support/releases/download/v1.0/SDA-codes.zip)
 
 ※ 書籍収録時に紙数の都合上削除したコードや文言を修正した箇所があるため、若干齟齬があるコードがあります。
 
@@ -30,7 +30,7 @@
 ## 📊 データセット
 本書で利用しているデータセット（CSV形式）は以下からダウンロードできます。
 
-- [データセット](./data/SDA-datasets.zip)
+- [データセット](https://github.com/yuta-koike/SDA-support/releases/download/v1.0/SDA-datasets.zip)
 - [データセット説明ファイル (Excel)](./data/datasets_description.xlsx)  
 
 ※ Excel ファイルを参照すると、各 CSV ファイルの用途や対応章を確認できます。  
