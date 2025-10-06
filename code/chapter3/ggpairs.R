@@ -1,6 +1,7 @@
 ### 散布図行列 (東京都の新型コロナウイルス感染動向のデータによる例)
 library(tidyverse)
-covid <- read_csv("covid19tokyo.csv")
+covid <- read_csv("covid19tokyo.csv") |>
+  mutate(年月=paste(年, 月, sep="/")) # 年と月を結合したラベルを作成
 # install.packages("GGally") # パッケージのインストール(必要な場合)
 library(GGally) # パッケージのロード
 ggpairs(covid, columns = 4:7) # 4~7列目の変数間の散布図行列
