@@ -5,6 +5,7 @@ library(tidyverse)
 ## データの読み込み
 kikou <- read_csv("kikou2021.csv", locale=locale(encoding="sjis"))
 ## 関数fitdistr()によるガンマ分布のあてはめ
+x <- kikou$風速 # 風速データの抽出
 fit <- fitdistr(x, "gamma")
 ## 信頼区間の計算
 confint(fit) # 95%信頼区間
