@@ -7,8 +7,8 @@ p <- rep(1/6, 6) # 各目の出現確率
 mu <- weighted.mean(omega, p) # 理論上の期待値(=3.5)
 (v <- weighted.mean((omega - mu)^2, p)) # 理論上の分散
 (sigma <- sqrt(v)) # 理論上の標準偏差
-## シミュレーターの作成
-mymean <- function(n){ # nは1回の実験でサイコロを振る回数
+## シミュレータの作成
+mysim <- function(n){ # nは1回の実験でサイコロを振る回数
   x <- sample(omega, size = n, replace = TRUE) 
   # 歪みのないサイコロをn回振る
   xbar <- mean(x) # 標本平均を計算
