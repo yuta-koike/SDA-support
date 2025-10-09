@@ -1,7 +1,7 @@
 ### ヒストグラムの描画
 ## 気候データによる例
 library(tidyverse) # ggplot2, dplyr, readr などをまとめて読み込む
-kikou <- read_csv(file="kikou2023.csv",
+kikou <- read_csv(file="kikou2021.csv",
                   locale=locale(encoding="sjis"))
 ## 気温のヒストグラム
 ggplot(data = kikou) + 
